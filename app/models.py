@@ -160,7 +160,8 @@ class Student(UserMixin, db.Model):
 
     def drop_course(self, CourseNum):
         course_drop = [
-            course for course in self.Courses if course.CourseNum == CourseNum
+            course for course in self.Courses
+            if int(course.CourseNum) == int(CourseNum)
         ][0]
         self.Courses.remove(course_drop)
 

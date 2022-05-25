@@ -238,7 +238,7 @@ def course_drop(CourseNum):
     if isinstance(current_user._get_current_object(), Student):
         Courses = current_user.Courses
         course_selected = [Course_.CourseNum for Course_ in Courses]
-        if CourseNum not in course_selected:
+        if int(CourseNum) not in course_selected:
             flash('您未选择该门课程！')
         else:
             current_user.drop_course(CourseNum)
