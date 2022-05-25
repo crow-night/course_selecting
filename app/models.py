@@ -5,11 +5,11 @@ from app import login
 
 @login.user_loader
 def load_user(Num):
-    if len(Num) == 8:
+    if len(str(Num)) == 8:
         return Student.query.get(int(Num))
-    elif len(Num) == 4:
+    elif len(str(Num)) == 4:
         return Teacher.query.get(int(Num))
-    elif len(Num) == 3:
+    elif len(str(Num)) == 3:
         return Manager.query.get(int(Num))
     else:
         pass
