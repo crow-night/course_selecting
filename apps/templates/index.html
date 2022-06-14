@@ -10,15 +10,10 @@
         <link rel="stylesheet" href='/static/bootstrap/css/bootstrap.min.css'>
         <link rel="stylesheet" href='/static/css/stisla.css'>
 
-{#        <link rel="stylesheet" href="{{ url_for('static', filename='ionicons/css/ionicons.min.css') }}">#}
-{#        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">#}
-{#        <link rel="stylesheet" href="{{ url_for('static', filename='css/stisla.css') }}">#}
-
-
     </head>
 
     <body>
-        <section class="hero bg-overlay" id="hero" data-bg="{{ url_for('static', filename='img/index.jpg') }}">
+        <section class="hero bg-overlay" id="hero" data-bg="{{ url_for('static', filename='/img/index.jpg') }}">
             <div class="text py-5">
                 <p class="lead">Student course selection system </p>
                 <h1><span class="bold">学生选课系统</span><br></h1>
@@ -33,12 +28,6 @@
         <script src='/static/js/jquery.min.js'></script>
         <script src='/static/bootstrap/js/bootstrap.min.js'></script>
         <script src='/static/js/stisla.js'></script>
-{##}
-{#        <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>#}
-{#        <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>#}
-{#        <script src="{{ url_for('static', filename='js/stisla.js') }}"></script>#}
-
-
 
 
     </body>
