@@ -43,6 +43,7 @@ class Major(db.Model):
 
 
 class Course_select_table(db.Model):
+    # 课程选择
     __tablename__ = "course_select_table"
     StudentNum = db.Column(db.Integer,
                            db.ForeignKey('student.StudentNum'),
@@ -68,6 +69,7 @@ class Course_select_table(db.Model):
 
 
 class Course_Teacher(db.Model):
+    # 教师开设课程
     __tablename__ = "course_teacher"
     CourseNum = db.Column(db.Integer,
                           db.ForeignKey('course.CourseNum'),
